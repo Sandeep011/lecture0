@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tables</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+
+<!--        <meta http-equiv="refresh" content="5" >
+-->
+
+        <style>
+
+        @media  (min-width: 500px) {
+            body {
+                background-color: lightblue;
+            }
+        }
+
+        @media (max-width: 500px) {
+            body {
+                background-color: yellow;
+            }
+        }
+
+        body {
+            padding: 20px;
+        }
+
+    table, tr, td, th {
+        border: 2px dotted grey;
+        border-collapse: collapse;
+        padding: 10px;
+        text-align: center;
+        width:50%;
+    }
+    button:hover {
+        background-color:red;
+        color:Green;
+    }
+
+    </style>
+</head>
+<body>
+    <div>
+    <h1>{{text}}</h1>
+    <table>
+        <tr>
+            <th>BOOK NAME</th>
+            <th>AUTHORS</th>
+        </tr>
+        <tr>
+            <td>Meditations</td>
+            <td>The fault in our stars</td>
+        </tr>
+        <tr>
+            <td>Marcus Aurelius</td>
+            <td>John Green</td>
+        </tr>
+    </table>
+    </div>
+    <div>
+        <p>Enter you name and password</p>
+        <input type="text" placeholder="Name" name="name">
+        <input type="text" placeholder="password" name="food">
+        <p>Fill out the form</p>
+        <input type="radio" name="food">Pasta
+        <input type="radio" name="food">Maggi
+        <input type="radio" name="food">Juice
+        <button href="a3.html">Submit</button>
+    </div>
+    <a href="{{url_for('panda')}}">Here</a>
+</body>
+</html>
